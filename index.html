@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="keywords" content="Строительство дома, коттедж, баня, команда строителей">
+    <meta name="description" content="Быстрое и качественное строительство домов, коттеджей, бань. Мелкие строительные работы. Черновая и чистовая отделка">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Konstruktor</title>
+</head>
+<body>
+
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header__logo">
+                <img class="header__logo-img" src="assets/img/logo/logo.svg" alt="hi logo">
+                <div class="header__vertical-line"></div>
+                <div class="header__logo__text">
+                    Строительство гостиниц, домов, бань
+                </div>
+            </div>
+            <div class="header__contact-bar">
+                <div class="header__row-box">
+                    <img class="header__contact-location" src="assets/img/logo/location_on.svg" alt="">
+                    <div class="header__text">Работаем по всему Крыму</div>
+                </div>
+                <div class="header__contact">
+                    <div class="header__phone">
+                        <a class="header__phone-link" href="tel:+79787939093">+7 (978) 793-90-93</a>
+                    </div>
+                    <div class="header__operating-mode">9:00 - 18:00</div>
+                    <div class="btn" id="myBtn">
+                            <img class="header__img-recall" src="assets/img/logo/call_received.svg" alt="">
+                            Перезвоните мне
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Header -->
+
+        <!-- Main -->
+        <div class="main">
+            <div class="main__text">
+                строй с konstruktor
+            </div>
+            <div class="main__discription">
+                Выполним любые виды строительных работ
+            </div>
+            <div class="btn" id="consult">
+                Консультация<div class="btn__badge">Free</div>
+            </div>
+        </div>
+        <!-- /Main -->
+
+        <!-- Services -->
+        <div class="services">
+            <div class="services__card">
+                <img class="services__img" src="assets/img/services/hotel.png" alt="hotel">
+                <div class="services__name">Гостиницы</div>
+                <div class="services__text">Размер 100 кв/м</div>
+                <div class="services__text">от 5 000 000 руб.</div>
+                <div class="btn" id="hotelRequest">
+                    Оставить заявку
+                </div>
+            </div>
+            <div class="services__card">
+                <img class="services__img" src="assets/img/services/house.png" alt="house">
+                <div class="services__name">Дома</div>
+                <div class="services__text">Размер 50 кв/м</div>
+                <div class="services__text">от 2500 000 руб.</div>
+                <div class="btn" id="houseRequest">
+                    Оставить заявку
+                </div>
+            </div>
+            <div class="services__card">
+                <img class="services__img" src="assets/img/services/bathhouse.png" alt="bathhouse">
+                <div class="services__name">Бани</div>
+                <div class="services__text">Размер 48 кв/м</div>
+                <div class="services__text">от 2 700 700 руб.</div>
+                <div class="btn" id="bathRequest">
+                    Оставить заявку
+                </div>
+            </div>
+        </div>
+        <!-- /Services -->
+
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content" id="modal">
+            <div class="modal-header">
+                <span class="close"></span>
+            </div>
+            <div class="modal-body">
+                <form class="form" action="Ujin.Crabs@mail.ru" method="post">
+                    <div class="modal__form">
+                        <div class="input__text">
+                            <p>Ваш номер:</p>
+                            <p>Комментарий:</p>
+                        </div>
+                        <div class="input__area">
+                            <input class="phone__input" type="tel" name="tel" pattern="[0-9]{10}">
+                            <textarea class="msg" name="user_message"></textarea>
+                        </div>
+                    </div>
+                    <input class="btn__input" type="submit" value="Отправить">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById('myModal');
+        var btn = document.getElementById("myBtn");
+        var consultBtn = document.getElementById("consult");
+        var hotelBtn = document.getElementById("hotelRequest");
+        var houseBtn = document.getElementById("houseRequest");
+        var bathBtn = document.getElementById("bathRequest");
+        var span = document.getElementsByClassName("close")[0];
+
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        };
+        consultBtn.onclick = function() {
+            modal.style.display = "block";
+        };
+        hotelBtn.onclick = function() {
+            modal.style.display = "block";
+        };
+        houseBtn.onclick = function() {
+            modal.style.display = "block";
+        };
+        bathBtn.onclick = function() {
+            modal.style.display = "block";
+        };
+        span.onclick = function() {
+            modal.style.display = "none";
+        };
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+
+</body>
+
+</body>
+</html>
