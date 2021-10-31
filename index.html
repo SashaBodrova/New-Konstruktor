@@ -1,0 +1,142 @@
+---
+layout: default
+title: Konstruktor
+---
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header__logo">
+                <img class="header__logo-img" src="assets/img/logo/logo.svg" alt="hi logo">
+                <div class="header__vertical-line"></div>
+                <div class="header__logo__text">
+                    Строительство гостиниц, домов, бань
+                </div>
+            </div>
+            <div class="header__contact-bar">
+                <div class="header__row-box">
+                    <img class="header__contact-location" src="assets/img/logo/location_on.svg" alt="">
+                    <div class="header__text">Работаем по всему Крыму</div>
+                </div>
+                <div class="header__contact">
+                    <div class="header__phone">
+                        <a class="header__phone-link" href="tel:+79787939093">+7 (978) 793-90-93</a>
+                    </div>
+                    <div class="header__operating-mode">9:00 - 18:00</div>
+                    <div class="btn" id="myBtn">
+                            <img class="header__img-recall" src="assets/img/logo/call_received.svg" alt="">
+                            Перезвоните мне
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Header -->
+
+        <!-- Main -->
+        <div class="main">
+            <div class="main__text">
+                строй с konstruktor
+            </div>
+            <div class="main__discription">
+                Выполним любые виды строительных работ
+            </div>
+            <div class="btn" id="consult">
+                Консультация<div class="btn__badge">Free</div>
+            </div>
+        </div>
+        <!-- /Main -->
+
+        <!-- Services -->
+        <div class="services">
+            <div class="services__card">
+                <img class="services__img" src="assets/img/services/hotel.png" alt="hotel">
+                <div class="services__name">Гостиницы</div>
+                <div class="services__text">Размер 100 кв/м</div>
+                <div class="services__text">от 5 000 000 руб.</div>
+                <div class="btn" id="hotelRequest">
+                    Оставить заявку
+                </div>
+            </div>
+            <div class="services__card">
+                <img class="services__img" src="assets/img/services/house.png" alt="house">
+                <div class="services__name">Дома</div>
+                <div class="services__text">Размер 50 кв/м</div>
+                <div class="services__text">от 2500 000 руб.</div>
+                <div class="btn" id="houseRequest">
+                    Оставить заявку
+                </div>
+            </div>
+            <div class="services__card">
+                <img class="services__img" src="assets/img/services/bathhouse.png" alt="bathhouse">
+                <div class="services__name">Бани</div>
+                <div class="services__text">Размер 48 кв/м</div>
+                <div class="services__text">от 2 700 700 руб.</div>
+                <div class="btn" id="bathRequest">
+                    Оставить заявку
+                </div>
+            </div>
+        </div>
+        <!-- /Services -->
+
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content" id="modal">
+            <div class="modal-header">
+                <span class="close"></span>
+            </div>
+            <div class="modal-body">
+                <form class="form" action="Ujin.Crabs@mail.ru" method="post">
+                    <div class="modal__form">
+                        <div class="input__text">
+                            <p>Ваш номер:</p>
+                            <p>Комментарий:</p>
+                        </div>
+                        <div class="input__area">
+                            <input class="phone__input" type="tel" name="tel" pattern="[0-9]{10}">
+                            <textarea class="msg" name="user_message"></textarea>
+                        </div>
+                    </div>
+                    <input class="btn__input" type="submit" value="Отправить">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById('myModal');
+        var btn = document.getElementById("myBtn");
+        var consultBtn = document.getElementById("consult");
+        var hotelBtn = document.getElementById("hotelRequest");
+        var houseBtn = document.getElementById("houseRequest");
+        var bathBtn = document.getElementById("bathRequest");
+        var span = document.getElementsByClassName("close")[0];
+
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        };
+        consultBtn.onclick = function() {
+            modal.style.display = "block";
+        };
+        hotelBtn.onclick = function() {
+            modal.style.display = "block";
+        };
+        houseBtn.onclick = function() {
+            modal.style.display = "block";
+        };
+        bathBtn.onclick = function() {
+            modal.style.display = "block";
+        };
+        span.onclick = function() {
+            modal.style.display = "none";
+        };
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+
+</body>
